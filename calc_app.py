@@ -19,7 +19,11 @@ def math_operation(num1,num2,operation):
         answer = num1 - num2
 
     elif operation =="/":
-        answer = num1 / num2
+        if num2 != 0:
+            answer = num1 / num2
+        else:
+            print("Can't divide by zero!")
+            exit()
 
     return answer
 
