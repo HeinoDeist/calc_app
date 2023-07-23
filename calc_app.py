@@ -86,7 +86,7 @@ while menu_choice != "c":
         
         num1, num2, operation = user_input()
         answer = math_operation(num1,num2,operation)
-        print(f"{num1:.2f} {operation} {num2:.2f} = {answer:.2f}") # Numbers formatted to two decimals. User might enter floats. 
+        print(f"Your operation is: {num1:.2f} {operation} {num2:.2f} = {answer:.2f}") # Numbers formatted to two decimals. User might enter floats. 
         
         file = open("equations.txt", "a+")  # Creates a file if it does not exist. Creates in same directory. Reading and writing in append mode. 
         file.write(f"{num1:.2f} {operation} {num2:.2f} = {answer:.2f}\n")
